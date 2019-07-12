@@ -1,4 +1,4 @@
-# Vue Remake with Server and auto make API, model, and controller
+# VUE CLI 3 Very Compatible for MYSQL DATABASE
 
 ## Project setup
 ```
@@ -17,7 +17,7 @@ npm run server
 
 ### Auto generate model and controller
 ```
-npm run make api "name"
+npm run make
 ```
 ---
 
