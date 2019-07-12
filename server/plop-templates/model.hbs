@@ -1,8 +1,30 @@
 const db = require('../db')
-const table = {{name}}
+const table = '{{name}}'
 
 module.exports = {
-  function(){
 
-  }
+  // read(res){
+  //   db.query('SELECT*FROM "+table+"', (err,results)=>{
+  //     res.send(results)
+  //   })
+  // }
+  // create(res,someRequest){
+  //   db.query("INSERT INTO "+table+" VALUES('"+someRequest+"')", (err,results)=>{
+  //     if (!err) res.send(err)
+  //     else res.send(results)
+  //   })
+  // }
+  // update(res,someRequest){
+  //   db.query("UPDATE "+table+" SET example='example' WHERE id="+someRequest+" ", (err,results)=>{
+  //     if (!err) res.send(err)
+  //     else res.send(results)
+  //   })
+  // }
+  // delete(res,someRequest){
+  //   db.query("DELETE FROM "+table+" WHERE id='"+someRequest+"'", (err,results)=>{
+  //     if (!err) res.send(err)
+  //     else res.send(results)
+  //   })
+  // }
+
 }
