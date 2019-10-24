@@ -1,6 +1,6 @@
 {
-  "name": "ujian_online_vue",
-  "short_name": "ujian_online_vue",
+  "name": "client",
+  "short_name": "client",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

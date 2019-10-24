@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './globvar'
 import './registerServiceWorker'
-window.axios = require('axios')
+import axios from 'axios'
 
 Vue.config.productionTip = false
+Vue.prototype.axios = axios
+Vue.prototype.api = 'api'
 
 new Vue({
   router,

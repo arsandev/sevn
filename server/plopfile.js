@@ -9,8 +9,8 @@ module.exports = function (plop) {
       actions: [
         {
             type: 'add',
-            path: 'server/controllers/{{name}}Controller.js',
-            templateFile: 'server/plop-templates/controller.hbs'
+            path: 'controllers/{{name}}Controller.js',
+            templateFile: 'templates/controller.hbs'
         },
     ]
   })
@@ -24,8 +24,8 @@ module.exports = function (plop) {
       actions: [
         {
             type: 'add',
-            path: 'server/models/{{name}}.js',
-            templateFile: 'server/plop-templates/model.hbs'
+            path: 'models/{{name}}.js',
+            templateFile: 'templates/model.hbs'
         }
     ]
   })
@@ -39,13 +39,13 @@ module.exports = function (plop) {
       actions: [
         {
             type: 'add',
-            path: 'server/controllers/{{name}}Controller.js',
-            templateFile: 'server/plop-templates/controller.hbs'
+            path: 'controllers/{{name}}Controller.js',
+            templateFile: 'templates/Controller.hbs'
         },
         {
             type: 'add',
-            path: 'server/models/{{name}}.js',
-            templateFile: 'server/plop-templates/model.hbs'
+            path: 'models/{{name}}.js',
+            templateFile: 'templates/Model.hbs'
         }
     ]
   })
