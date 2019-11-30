@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <a href="https://teziger.blogspot.com" target="_blank">Arsan Dev</a> (c) 2019
+    <a href="https://arsan.dev" target="_blank">Arsan Dev</a> (c) 2019
     <br><br>
     Mail: <b>tganteng77@gmail.com</b> <br>
     Github: <b><a href="https://github.com/arsandev" target="_blank">https://github.com/arsandev</a></b> <br><br><br>
