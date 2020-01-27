@@ -6,7 +6,7 @@ import fs from 'fs'
 import path from 'path'
 
 const app = express()
-const port = process.env.PORT || process.env.WEB_PORT
+const port = process.env.WEB_PORT
 
 app.use(bodyParser.json())
 app.use(cors())
@@ -20,6 +20,14 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(__dirname+'/vue'))
   app.get(/.*/, (req,res)=>{ res.sendFile(__dirname+'/vue/index.html') })
 }
+
+app.use((err, req, res, next) => {
+ res.status(500).json({
+   status: false,
+   name: err.name,
+   message: err.message
+ });
+});
 
 app.listen(port, ()=>{
   console.log('server running on port '+port)
