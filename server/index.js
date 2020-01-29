@@ -26,8 +26,8 @@ app.use((err, req, res, next) => {
    status: false,
    name: err.name,
    message: err.message
- });
-});
+ })
+})
 
 app.listen(port, ()=>{
   console.log('server running on port '+port)
