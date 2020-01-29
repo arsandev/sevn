@@ -16,7 +16,7 @@ fs.readdirSync(path.join(__dirname, 'routers')).forEach(file => {
   app.use('/api/'+controller[0], require('./routers/'+file))
 })
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.PROD === 'true') {
   app.use(express.static(__dirname+'/vue'))
   app.get(/.*/, (req,res)=>{ res.sendFile(__dirname+'/vue/index.html') })
 }
