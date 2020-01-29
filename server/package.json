@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.4",
-    "plop": "^2.5.2",
+    "plop": "^2.5.2"
   }
 }
