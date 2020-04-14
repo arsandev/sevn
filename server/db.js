@@ -6,7 +6,7 @@ const db = mysql.createConnection({
   database:process.env.DB_NAME
 })
 db.connect((err)=>{
-  if (!err) console.log('database connected')
+  if (!err) console.log(`database ${process.env.DB_NAME} connected`)
   else console.log(err)
 })
 
