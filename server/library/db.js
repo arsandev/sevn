@@ -1,29 +1,28 @@
-import db from '../db'
+import db from '../config'
 import sql from 'sql-query'
 const sqlQuery = sql.Query()
 
-class Database {
-  constructor(table) {
-    this.table = table
+const query = (table) => {
+  const queries = {
+    query: (q,cb) => {
+      return db.query(q,(err,data)=>{
+        cb(err,data)
+      })
+    },
+    select: () => {
+      return sqlQuery.select().from(table)
+    },
+    update: () => {
+      return sqlQuery.update().from(table)
+    },
+    delete: () => {
+      return sqlQuery.remove().from(table)
+    },
+    insert: () => {
+      return sqlQuery.insert().from(table)
+    }
   }
-  query(q,cb){
-    let query = q
-    db.query(query,(err,data)=>{
-      cb(err,data)
-    })
-  }
-  select(){
-    return sqlQuery.select().from(this.table)
-  }
-  update(){
-    return sqlQuery.update().into(this.table)
-  }
-  delete(){
-    return sqlQuery.remove().from(this.table)
-  }
-  insert(){
-    return sqlQuery.insert().into(this.table)
-  }
+  return queries
 }
 
-module.exports = Database
+export default query

@@ -1,4 +1,4 @@
-import db from '../db'
+import db from '../config'
 import express from 'express'
 const router = express.Router()
 import jwt from '../library/jwt'
