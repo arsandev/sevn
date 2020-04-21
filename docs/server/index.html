@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Server | Arsan Dev</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.43c12d7d.css" as="style"><link rel="preload" href="/assets/js/app.53a8b392.js" as="script"><link rel="preload" href="/assets/js/2.9db782f8.js" as="script"><link rel="preload" href="/assets/js/9.10f060a1.js" as="script"><link rel="prefetch" href="/assets/js/10.465e938b.js"><link rel="prefetch" href="/assets/js/3.ffdf5024.js"><link rel="prefetch" href="/assets/js/4.f1038dec.js"><link rel="prefetch" href="/assets/js/5.a67b10fd.js"><link rel="prefetch" href="/assets/js/6.7eba699e.js"><link rel="prefetch" href="/assets/js/7.a7bb87ed.js"><link rel="prefetch" href="/assets/js/8.89767df7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.43c12d7d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Arsan Dev</span></a> <div class="links"><!----> <div class="user-settings"><a href="#" class="settings-button"><svg aria-hidden="true" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 settings-icon"><path fill="currentColor" d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path></svg></a> <div class="user-settings-menu" style="display:none;"><div class="theme-options"><!----> <!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox"></div> <!----> <!----></div></div></div> <!----> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/arsandev/sevn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/arsandev/sevn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">SEVN</a></li><li><a href="/server/" class="active sidebar-link">Server</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/server/#konfigurasi-env" class="sidebar-link">Konfigurasi Env</a></li><li class="sidebar-sub-header"><a href="/server/#membuat-router-endpoint" class="sidebar-link">Membuat Router Endpoint</a></li><li class="sidebar-sub-header"><a href="/server/#sql-query" class="sidebar-link">Sql Query</a></li><li class="sidebar-sub-header"><a href="/server/#jwt-middleware-untuk-route" class="sidebar-link">JWT Middleware Untuk Route</a></li></ul></li><li><a href="/client/" class="sidebar-link">Client</a></li><li><a href="/deploy/" class="sidebar-link">Deploy</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="panduan-sisi-server"><a href="#panduan-sisi-server" class="header-anchor">#</a> Panduan Sisi Server</h1> <p>Server adalah sisi <em>backend</em> dari SEVN. Kita akan bermain di folder <code>/server</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>$ <span class="token builtin class-name">cd</span> server /* masuk ke folder server */
+$ <span class="token function">npm</span> run server /* menjalankan server */
+</code></pre></div><h2 id="konfigurasi-env"><a href="#konfigurasi-env" class="header-anchor">#</a> Konfigurasi Env</h2> <p><code>./.env</code></p> <div class="language-env extra-class"><pre class="language-text"><code>WEB_PORT=3000
+WEB_API_URL=/api
+
+DB_HOST=
+DB_USER=
+DB_PASS=
+DB_NAME=
+
+/* PROD=true (production mode), PROD={empty} (development mode) */
+PROD=
+
+JWT_SECRET=default
+JWT_EXP=30m
+</code></pre></div><ul><li><strong>WEB_PORT</strong>: Port server &amp; hasil build berjalan</li> <li><strong>WEB_API_URL</strong>: Nama path untuk menempatkan seluruh endpoint API</li> <li><strong>DB_HOST</strong>: Host Database</li> <li><strong>DB_USER</strong>: Username Database</li> <li><strong>DB_PASS</strong>: Password Database</li> <li><strong>DB_NAME</strong>: Nama Database</li> <li><strong>PROD</strong>: (true/false). Jika true, maka production telah berjalan</li> <li><strong>JWT_SECRET</strong>: Kode rahasia untuk JWT. Baca: <a href="https://jwt.io/introduction/" target="_blank" rel="noopener noreferrer">Pengenalan JWT<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><strong>JWT_EXP</strong>: Waktu expired token JWT</li></ul> <h2 id="membuat-router-endpoint"><a href="#membuat-router-endpoint" class="header-anchor">#</a> Membuat Router Endpoint</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>$ <span class="token function">npm</span> run <span class="token function">make</span> router contoh
+</code></pre></div><p>Otomatis membuat file baru di <code>./server/contohRouter.js</code> dan route baru di <code>http://localhost:3000/api/contoh</code></p> <h2 id="sql-query"><a href="#sql-query" class="header-anchor">#</a> Sql Query</h2> <p><code>./routers/contohRouter.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> db <span class="token operator">=</span> <span class="token function">table</span><span class="token punctuation">(</span><span class="token string">&quot;contoh&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="select"><a href="#select" class="header-anchor">#</a> Select</h3> <div class="language-js extra-class"><pre class="language-js"><code>
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `id`, `name` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">as</span><span class="token punctuation">(</span><span class="token string">'label'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `id`, `name` AS `label` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'title'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">as</span><span class="token punctuation">(</span><span class="token string">'label'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `id`, `name`, `title` AS `label` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">as</span><span class="token punctuation">(</span><span class="token string">'label'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'title'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `id`, `name` AS `label`, `title` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">[</span> <span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token string">'name'</span> <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `id`, `name` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'abc'</span><span class="token punctuation">,</span><span class="token string">'def'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token string">'ghi'</span><span class="token punctuation">,</span> sql<span class="token operator">:</span> <span class="token string">'SOMEFUNC(ghi)'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `abc`, `def`, (SOMEFUNC(ghi)) AS `ghi` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">calculateFoundRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT SQL_CALC_FOUND_ROWS * FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">calculateFoundRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT SQL_CALC_FOUND_ROWS `id` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id1'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id2'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `t1`.`id1`, `t1`.`name`, `t2`.`id2` FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> joinType<span class="token operator">:</span> <span class="token string">'left inner'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id2'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `t1`.`id1`, `t2`.`id2` FROM `contoh` `t1` LEFT INNER JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id1'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'id2'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT `t1`.`id1`, `t1`.`name`, `t2`.`id2` FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT COUNT(*) FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT COUNT(*) AS `c` FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT COUNT(`t2`.`id`) FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT COUNT(`t1`.`id`), COUNT(`t2`.`id`) FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">'col'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT COUNT(`t2`.`id`), COUNT(`t2`.`col`) FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id2'</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token string">'id1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">fun</span><span class="token punctuation">(</span><span class="token string">'AVG'</span><span class="token punctuation">,</span> <span class="token string">'col'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT AVG(`t2`.`col`) FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2` = `t1`.`id1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">'id2a'</span><span class="token punctuation">,</span> <span class="token string">'id2b'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'id1a'</span><span class="token punctuation">,</span> <span class="token string">'id1b'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT COUNT(`t2`.`id`) FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id2a` = `t1`.`id1a` AND `t2`.`id2b` = `t1`.`id1b`&quot;</span>
+</code></pre></div><h3 id="where"><a href="#where" class="header-anchor">#</a> Where</h3> <div class="language-js extra-class"><pre class="language-js"><code>  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = 0&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token keyword">null</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` IS NULL&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">eq</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` IS NULL&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">ne</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` IS NOT NULL&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token keyword">undefined</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` IS NULL&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = false&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = ''&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = true&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token string">'a'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = 'a'&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token string">'a\''</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = 'a\\''&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` IN (1, 2, 3)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE FALSE&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col1<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> col2<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col1` = 1 AND `col2` = 2&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col1<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> col2<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE (`col1` = 1) AND (`col2` = 2)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE (`col` = 1) AND (`col` = 2)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col1<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> col2<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col3<span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE (`col1` = 1 AND `col2` = 2) AND (`col3` = 3)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id` = `t1`.`id` WHERE (`t1`.`col` = 1) AND (`t2`.`col` = 2)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">'table2'</span><span class="token punctuation">,</span> <span class="token string">'id'</span><span class="token punctuation">,</span> <span class="token string">'id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token string">'contoh'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` `t1` JOIN `table2` `t2` ON `t2`.`id` = `t1`.`id` WHERE (`t1`.`col` = 1) AND (`col` = 2)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">gt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` &gt; 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">gte</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` &gt;= 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">lt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` &lt; 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">lte</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` &lt;= 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">eq</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` = 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">ne</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` &lt;&gt; 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">between</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` BETWEEN 'a' AND 'b'&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">not_between</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` NOT BETWEEN 'a' AND 'b'&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">like</span><span class="token punctuation">(</span><span class="token string">'abc'</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` LIKE 'abc'&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span>
+  sql<span class="token punctuation">.</span><span class="token function">not_like</span><span class="token punctuation">(</span><span class="token string">'abc'</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` NOT LIKE 'abc'&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> sql<span class="token punctuation">.</span><span class="token function">not_in</span><span class="token punctuation">(</span><span class="token punctuation">[</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE `col` NOT IN (1, 2, 3)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> __sql<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;LOWER(`stuff`) LIKE 'peaches'&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE LOWER(`stuff`) LIKE 'peaches'&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> __sql<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;LOWER(`stuff`) LIKE ?&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'peaches'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE LOWER(`stuff`) LIKE 'peaches'&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> __sql<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;LOWER(`stuff`) LIKE ? AND `number` &gt; ?&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'peaches'</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE LOWER(`stuff`) LIKE 'peaches' AND `number` &gt; 12&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> __sql<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&quot;LOWER(`stuff`) LIKE ? AND `number` == ?&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'peaches'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` WHERE LOWER(`stuff`) LIKE 'peaches' AND `number` == NULL&quot;</span>
+</code></pre></div><h3 id="order"><a href="#order" class="header-anchor">#</a> Order</h3> <div class="language-js extra-class"><pre class="language-js"><code>  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'col'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` ORDER BY `col` ASC&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'col'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` ORDER BY `col` ASC&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'col'</span><span class="token punctuation">,</span> <span class="token string">'Z'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` ORDER BY `col` DESC&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'col'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'col2'</span><span class="token punctuation">,</span> <span class="token string">'Z'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` ORDER BY `col` ASC, `col2` DESC&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'col'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` ORDER BY col&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'?? DESC'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'col'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` ORDER BY `col` DESC&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token string">'ST_Distance(??, ST_GeomFromText(?,4326))'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'geopoint'</span><span class="token punctuation">,</span> <span class="token string">'POINT(-68.3394 27.5578)'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` ORDER BY ST_Distance(`geopoint`, ST_GeomFromText('POINT(-68.3394 27.5578)',4326))&quot;</span>
+</code></pre></div><h3 id="limit"><a href="#limit" class="header-anchor">#</a> Limit</h3> <div class="language-js extra-class"><pre class="language-js"><code>  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">limit</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` LIMIT 123&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">limit</span><span class="token punctuation">(</span><span class="token string">'123456789'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT * FROM `contoh` LIMIT 123456789&quot;</span>
+</code></pre></div><h3 id="select-function"><a href="#select-function" class="header-anchor">#</a> Select Function</h3> <div class="language-js extra-class"><pre class="language-js"><code>  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">fun</span><span class="token punctuation">(</span><span class="token string">'myfun'</span><span class="token punctuation">,</span> <span class="token string">'col1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT MYFUN(`col1`) FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">fun</span><span class="token punctuation">(</span><span class="token string">'myfun'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span> <span class="token string">'col1'</span><span class="token punctuation">,</span> <span class="token string">'col2'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT MYFUN(`col1`, `col2`) FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">fun</span><span class="token punctuation">(</span><span class="token string">'dbo.fnBalance'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span> <span class="token number">80</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'balance'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT DBO.FNBALANCE(80, NULL, NULL) AS `balance` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">fun</span><span class="token punctuation">(</span><span class="token string">'myfun'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span> <span class="token string">'col1'</span><span class="token punctuation">,</span> <span class="token string">'col2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'alias'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT MYFUN(`col1`, `col2`) AS `alias` FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">fun</span><span class="token punctuation">(</span><span class="token string">'myfun'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span> <span class="token string">'col1'</span><span class="token punctuation">,</span> sqlQuery<span class="token punctuation">.</span><span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">'col2'</span><span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'alias'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;SELECT MYFUN(`col1`, 'col2') AS `alias` FROM `contoh`&quot;</span>
+</code></pre></div><h3 id="insert"><a href="#insert" class="header-anchor">#</a> Insert</h3> <div class="language-js extra-class"><pre class="language-js"><code>  db
+  <span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'contoh'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;INSERT INTO `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'contoh'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;INSERT INTO `contoh` VALUES()&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'contoh'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;INSERT INTO `contoh` (`col`) VALUES (1)&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'contoh'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col1<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> col2<span class="token operator">:</span> <span class="token string">'a'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;INSERT INTO `contoh` (`col1`, `col2`) VALUES (1, 'a')&quot;</span>
+</code></pre></div><h3 id="update"><a href="#update" class="header-anchor">#</a> Update</h3> <div class="language-js extra-class"><pre class="language-js"><code>  db
+  <span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'table1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;UPDATE `table1`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'table1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;UPDATE `table1` SET `col` = 1&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'table1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col1<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> col2<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;UPDATE `table1` SET `col1` = 1, `col2` = 2&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span><span class="token string">'table1'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span> col1<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> col2<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;UPDATE `table1` SET `col1` = 1, `col2` = 2 WHERE `id` = 3&quot;</span>
+</code></pre></div><h3 id="delete"><a href="#delete" class="header-anchor">#</a> Delete</h3> <div class="language-js extra-class"><pre class="language-js"><code>  db
+  <span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;DELETE FROM `contoh`&quot;</span>
+
+
+  db
+  <span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token string">&quot;DELETE FROM `contoh` WHERE `id` = 3&quot;</span>
+</code></pre></div><h2 id="jwt-middleware-untuk-route"><a href="#jwt-middleware-untuk-route" class="header-anchor">#</a> JWT Middleware Untuk Route</h2> <p>JWT digunakan untk melindungi dan meng-autentikasi API response</p> <h3 id="mendapatkan-token-jwt"><a href="#mendapatkan-token-jwt" class="header-anchor">#</a> Mendapatkan token JWT</h3> <p><code>./router/contohRouter.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> jwt <span class="token keyword">from</span> <span class="token string">'../library/jwt'</span>
+
+<span class="token keyword">var</span> payload <span class="token operator">=</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;arsan&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> token <span class="token operator">=</span> jwt<span class="token punctuation">.</span><span class="token function">sign</span><span class="token punctuation">(</span>payload<span class="token punctuation">)</span> <span class="token comment">// menghasilkan token</span>
+</code></pre></div><h3 id="memverifikasi-token"><a href="#memverifikasi-token" class="header-anchor">#</a> Memverifikasi Token</h3> <p><code>./router/contohRouter.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> token <span class="token operator">=</span> jwt<span class="token punctuation">.</span><span class="token function">verify</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>query<span class="token punctuation">.</span>token<span class="token punctuation">)</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;Token valid!&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>Jika token valid, maka akan diteruskan ke <code>res.send()</code>. Jika gagal, maka akan menghasilkan respon error JWT</p> <h3 id="verifikasi-dengan-syarat"><a href="#verifikasi-dengan-syarat" class="header-anchor">#</a> Verifikasi Dengan Syarat</h3> <p>Digunakan untuk memverifikasi token berdasarkan payload.</p> <p><code>./router/contohRouter.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> token <span class="token operator">=</span> jwt<span class="token punctuation">.</span><span class="token function">verify</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>query<span class="token punctuation">.</span>token<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span>id<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;Token valid&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>Jika token valid dan payload token sesuai kriteria <code>.where()</code>, maka akan diteruskan ke <code>res.send()</code>. Jika gagal atau tidak sesuai kriteria, maka akan menghasilkan respon error JWT</p> <p>Selengkapnya di <a href="https://jwt.io/" target="_blank" rel="noopener noreferrer">Panduan JWT<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/" class="prev router-link-active">
+        SEVN
+      </a></span> <span class="next"><a href="/client/">
+        Client
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.53a8b392.js" defer></script><script src="/assets/js/2.9db782f8.js" defer></script><script src="/assets/js/9.10f060a1.js" defer></script>
+  </body>
+</html>
