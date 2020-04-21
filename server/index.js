@@ -13,7 +13,7 @@ app.use(cors())
 
 fs.readdirSync(path.join(__dirname, 'routers')).forEach(file => {
   let controller = file.split('Router.js')
-  app.use('/api/'+controller[0], require('./routers/'+file))
+  app.use(process.env.WEB_API_URL+'/'+controller[0], require('./routers/'+file))
 })
 
 if (process.env.PROD === 'true') {
