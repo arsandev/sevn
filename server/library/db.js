@@ -13,13 +13,13 @@ const query = (table) => {
       return sqlQuery.select().from(table)
     },
     update: () => {
-      return sqlQuery.update().from(table)
+      return sqlQuery.update().into(table)
     },
     delete: () => {
       return sqlQuery.remove().from(table)
     },
     insert: () => {
-      return sqlQuery.insert().from(table)
+      return sqlQuery.insert().into(table)
     }
   }
   return queries
