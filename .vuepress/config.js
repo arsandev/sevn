@@ -4,14 +4,12 @@ module.exports = {
     theme: 'yuu',
     themeConfig: {
       repo: 'arsandev/sevn',
-      repoLabel: 'Kontribusi!',
       docsBranch: 'docs',
       editLinks: true,
       editLinkText: 'Edit halaman ini!',
       nav: [
           { text: 'Home', link: '/' },
-          { text: 'About', link: '/about/' },
-          { text: 'Github', link: 'https://github.com/arsandev/sevn' }
+          { text: 'About', link: '/about/' }
       ],
       sidebar: [
           '/',
