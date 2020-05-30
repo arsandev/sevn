@@ -1,13 +1,13 @@
 import mysql from 'mysql'
-const db = mysql.createConnection({
+const db =  mysql.createPool({
+  connectionLimit: 10,
   host:process.env.DB_HOST,
   user:process.env.DB_USER,
   password:process.env.DB_PASS,
   database:process.env.DB_NAME
 })
-db.connect((err)=>{
-  if (!err) console.log(`database ${process.env.DB_NAME} connected`)
-  else console.log(err)
+db.getConnection((err, con) => {
+  if (err) console.log(err)
+  else console.log(`DB ${process.env.DB_NAME} connected`)
 })
-
-module.exports = db
+export default db
